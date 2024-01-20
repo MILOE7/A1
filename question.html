@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSUtips</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left logo">
+        <img src="./images/PSUtipslogo.png" alt="PSU-Logo" class="psulogo" />
+      </div>
+
+      <div class="nav-center">
+        <ul>
+          <li>
+            <a href="./index.html" class="nav-link" id="review"
+              ><i class="fa-solid fa-ranking-star fa-lg"></i> รีวิว</a
+            >
+          </li>
+          <li>
+            <a href="./question.html" class="nav-link" id="question"
+              ><i class="fa-solid fa-circle-question fa-lg"></i> คำถาม</a
+            >
+          </li>
+          <li>
+            <a href="./summary.html" class="nav-link" id="summary"
+              ><i class="fa-solid fa-sheet-plastic fa-lg"></i> สรุป</a
+            >
+          </li>
+          <li>
+            <a href="./addpost.html" class="nav-link"> 
+              <i class="fa-solid fa-circle-plus fa-lg"></i> ตั้งกระทู้</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="dark-btn">
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="intro">
+        <h1>
+          PSU<small>TIPs </small
+          ><i
+            class="fa-solid fa-face-grin-wink fa-bounce"
+            style="color: #ffd93d"
+          ></i>
+        </h1>
+        <h2>ค้นหาแบ่งปันรีวิววิชาเลือกเสรี</h2>
+      </div>
+
+      <div class="searchbar">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="ค้นหาวิชาด้วยรหัสวิชา ชื่อวิชาภาษาไทย / ภาษาอังกฤษ"
+          aria-label="default input example"
+        />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="question-container">
+
+        <div class="post-row">
+
+          <div class="tag-subject">
+            <div>
+              <button style="background-color: #6f7540">
+                874-194 | TAXATION AND LIFE
+              </button>
+              <!-- <span>June 24 2021, 13:40 pm</span> -->
+            </div>
+          </div>
+
+          <a href="#"
+            ><i class="fa-solid fa-trash-can" style="color: #b80000"></i
+          ></a>
+
+        </div>
+        <div class="qna-box">
+          <p class="question-text">ต้องใช้คณิตศาสตร์ไหม</p>
+          <div class="comment-box">
+
+            <div class="line-accordion"></div>
+
+            <button class="seecomment-btn accordion" onclick="toggleComments()">
+              คำตอบทั้งหมด
+              <div class="num-comment">
+                2
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </button>   
+
+          </div>
+
+          <div class="comments-container">
+            <div class="comment">
+              <div class="comment-header">
+                <span class="author">คำตอบของ เรียนมาแล้ว</span>
+                <span class="timestamp">25 วันที่ผ่านมา</span>
+              </div>
+              <div class="comment-content">
+                อยากลงเหมือนกันค่ะ วันนี้ได้ลองลงหรือยังคะ เราลงไม่ทัน เต็มㅠㅠ
+              </div>
+            </div>
+            
+            <div class="comment">
+              <div class="comment-header">
+                <span class="author">คำตอบของ lee</span>
+                <span class="timestamp">6 เดือนที่ผ่านมา</span>
+              </div>
+              <div class="comment-content">
+                ได้ตามสะดวกครับ อาจารย์ไม่เคร่ง
+              </div>
+            </div>
+          </div>
+          
+          <textarea rows="1" placeholder="ตอบคำถามนี้"></textarea>
+
+          
+        </div>
+        
+
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------- -->
+
+      <div class="question-container">
+        <div class="post-row">
+          <div class="tag-subject">
+            <div>
+              <button style="background-color: #419a62">
+                200-108 | MOBA & STRATEGY DEVELOPMENT
+              </button>
+              <!-- <span>June 24 2021, 13:40 pm</span> -->
+            </div>
+          </div>
+          <a href="#"
+            ><i class="fa-solid fa-trash-can" style="color: #b80000"></i
+          ></a>
+        </div>
+        <p class="question-text">
+          ไม่ทราบใครมีไลน์กลุ่มหรือ gg classroom ไหมครับ หรือไลน์ ta ก็ได้ครับ
+        </p>
+        <textarea rows="1" placeholder="ตอบคำถามนี้"></textarea>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------- -->
+
+      <div class="question-container">
+        <div class="post-row">
+          <div class="tag-subject">
+            <div>
+              <button style="background-color: #ebc68b">
+                895-032 | BASKETBALL
+              </button>
+              <!-- <span>June 24 2021, 13:40 pm</span> -->
+            </div>
+          </div>
+          <a href="#"
+            ><i class="fa-solid fa-trash-can" style="color: #b80000"></i
+          ></a>
+        </div>
+        <p class="question-text">เล่นบาสไม่เป็นเรียนได้ไหมค่ะ</p>
+        <textarea rows="1" placeholder="ตอบคำถามนี้"></textarea>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------- -->
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/fa6f31a750.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" ></script>
+  </body>
+</html>

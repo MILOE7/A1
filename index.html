@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSUtips</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left logo">
+        <img src="./images/PSUtipslogo.png" alt="PSU-Logo" class="psulogo" />
+      </div>
+
+      <div class="nav-center">
+        <ul>
+          <li>
+            <a href="./index.html" class="nav-link" id="review"
+              ><i class="fa-solid fa-ranking-star fa-lg"></i> รีวิว</a
+            >
+          </li>
+          <li>
+            <a href="./question.html" class="nav-link" id="question"
+              ><i class="fa-solid fa-circle-question fa-lg"></i> คำถาม</a
+            >
+          </li>
+          <li>
+            <a href="./summary.html" class="nav-link" id="summary"
+              ><i class="fa-solid fa-sheet-plastic fa-lg"></i> สรุป</a
+            >
+          </li>
+          <li>
+            <a href="./addpost.html" class="nav-link"> 
+              <i class="fa-solid fa-circle-plus fa-lg"></i> ตั้งกระทู้</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="dark-btn">
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="intro">
+        <h1>
+          PSU<small>TIPs </small
+          ><i
+            class="fa-solid fa-face-grin-wink fa-bounce"
+            style="color: #ffd93d"
+          ></i>
+        </h1>
+        <h2>ค้นหาแบ่งปันรีวิววิชาเลือกเสรี</h2>
+      </div>
+
+      <div class="searchbar">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="ค้นหาวิชาด้วยรหัสวิชา ชื่อวิชาภาษาไทย / ภาษาอังกฤษ"
+          aria-label="default input example"
+        />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <!-- <div class="write-post-container">
+        <div class="post-input-container">
+          <textarea
+            rows="3"
+            placeholder="กำลังคิดอะไรอยู่, นายไก่ชาง?"
+          ></textarea>
+          <div class="add-post-links">
+            <a href="#">Grade <i class="fa-solid fa-user-graduate" style="color: #3A0088;"></i></a>
+            <a href="#">Homework <i class="fa-solid fa-book-open" style="color: #FFC436;"></i></a>
+            <a href="#">Interesting <i class="fa-solid fa-face-grin-stars" style="color: #E61C5D;"></i></a>
+          </div>
+        </div>       
+
+      </div> -->
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="tag-subject">
+            <div>
+              <button
+                style="background-color: #6f7540"
+                onclick="navigateToAnotherPage()"
+              >
+                874-194 | TAXATION AND LIFE
+              </button>
+
+              <!-- <span>June 24 2021, 13:40 pm</span> -->
+            </div>
+          </div>
+          <a href="#"
+            ><i class="fa-solid fa-trash-can" style="color: #b80000"></i
+          ></a>
+        </div>
+
+        <p class="post-text">
+          วิชานี้จะเรียนเรื่องเกี่ยวกับภาษีอากร
+          จะทำให้เข้าใจเรื่องเกี่ยวกับภาษีมากขึ้น ทั้งเรื่องภาษีอากรคืออะไร
+          ในชีวิตประจำวันเราต้องเสียภาษีอะไรบ้าง
+          ในการทำธุรกิจมีภาษีอะไรบ้างที่ต้องจ่าย
+          แล้วในแต่ละอาชีพต้องจ่ายภาษีอะไรบ้าง วิธีการคิดคำนวณภาษี ฯลฯ
+          ซึ่งมีประโยชน์มากสำหรับคนที่ต้องการจะเข้าใจในเรื่องเกี่ยวกับภาษีอากร
+        </p>
+        <!-- <img src="./images/ไก่ล้วง2.jpg" class="post-img" /> -->
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <i class="fa-solid fa-thumbs-up" style="color: #b0b0b0"></i> 120
+            </div>
+            <div>
+              <i class="fa-regular fa-thumbs-down" style="color: #b0b0b0"></i>
+              45
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------- -->
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="tag-subject">
+            <div>
+              <button style="background-color: #419a62">
+                200-108 | MOBA & STRATEGY DEVELOPMENT
+              </button>
+              <!-- <span>June 24 2021, 13:40 pm</span> -->
+            </div>
+          </div>
+          <a href="#"
+            ><i class="fa-solid fa-trash-can" style="color: #b80000"></i
+          ></a>
+        </div>
+
+        <p class="post-text">
+          ส่วนมากจะเป็นงานกลุ่ม จะมีให้เลือก 2 เกม คือ ROV กับ Dota ส่วนตัวลง
+          DOTA อาจารย์น่ารักมาก สั่งงานตามเกม ถ้ามีเพื่อนเล่นเกมนี้เป็นแนะนำเลย
+          เกรดไม่อยากไม่มีสอบ สั่งงานตามในเกม ให้เราวิเคราะห์จุดเด่นของทีม
+          จุดด้อย ของเกม ประมาณนี้ ถ้าได้กลุ่มดีก็ดีเลย มันให้ไปแข่งกัน 2-3
+          เพื่อทำพ้อยพรีเซนตัวละครแต่ละตัว มีจุดเด่นจุดด้อย
+          ผู้เล่นต้องแก้เกมยังไง
+        </p>
+        <!-- <img src="./images/feed-image-2.png" class="post-img" /> -->
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <i class="fa-solid fa-thumbs-up" style="color: #2196f3"></i> 62
+            </div>
+            <div>
+              <i class="fa-regular fa-thumbs-down" style="color: #b0b0b0"></i>
+              15
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------- -->
+
+      <div class="post-container">
+        <div class="post-row">
+          <div class="tag-subject">
+            <div>
+              <button style="background-color: #ebc68b">
+                895-032 | BASKETBALL
+              </button>
+              <!-- <span>June 24 2021, 13:40 pm</span> -->
+            </div>
+          </div>
+          <a href="#"
+            ><i class="fa-solid fa-trash-can" style="color: #b80000"></i
+          ></a>
+        </div>
+
+        <p class="post-text">
+          ในรายวิชานี้จะเรียนพื้นฐานของการเล่นบาสเกตบอล ไม่ว่าจะเป็นการเดาะบอล
+          การเลี้ยงบอล การชู๊ตบอล รวมถึงการเล่นเป็นทีม
+          โดยรูปแบบของการเรียนในช่วงสัปดาห์เวลาเรียนก่อนมิดเทอม
+          จะเป็นการสอนพื้นฐานในการควบคุมลูกบาสต่างๆ
+          และมีชิ้นงานสื่อการเรียนรู้ให้ทำ ในช่วงสัปดาห์การสอบมิดเทอม
+          ทางรายวิชาก็จะมีการสอบเดาะบอล และการเลี้ยงลูกบอล
+          ส่วนสัปดาห์หลังมิดเทอม จะเป็นในส่วนของการเรียน และสอบการชู๊ตบอล และ 4
+          สัปดาห์สุดท้าย จะเป็นในส่วนของการแข่งกันเล่นแบบทีมครับ
+        </p>
+        <!-- <img src="./images/feed-image-3.png" class="post-img" /> -->
+
+        <div class="post-row">
+          <div class="activity-icons">
+            <div>
+              <i class="fa-solid fa-thumbs-up" style="color: #b0b0b0"></i> 67
+            </div>
+            <div>
+              <i class="fa-regular fa-thumbs-down" style="color: #2196f3"></i> 2
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------- -->
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/fa6f31a750.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" ></script>
+  </body>
+</html>
